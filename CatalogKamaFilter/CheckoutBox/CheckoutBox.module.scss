@@ -1,0 +1,22 @@
+.Container{
+  display: flex;
+  align-items: center;
+  justify-items: start;
+  gap: 33px;
+  flex-wrap: wrap;
+  @media (max-width: 990px) {
+    gap: 20px;
+  }
+  .Item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  svg{
+    cursor: pointer;
+  }
+
+  .Item:hover svg path{
+      fill: #9083E0;
+  }
+}

@@ -1,0 +1,1 @@
+export { getModelData } from './getModelData';

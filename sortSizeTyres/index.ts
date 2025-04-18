@@ -1,0 +1,1 @@
+export { sortSizeTyres } from './sortSizeTyres';

@@ -1,0 +1,273 @@
+.WrapperSuccess{
+  max-width: 690px;
+  width: 100%;
+  .WrapperProducts{
+    .ProductContainer{
+      .ProductTitle{
+        color: var(--clr-black);
+        font-family: Inter, "PT Sans Caption", serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 160%;
+      }
+      .ProductQuantity{
+        color: var(--clr-light_black);
+        font-family: Inter, "PT Sans Caption", serif;
+        font-size: 16px;
+        line-height: 160%;
+      }
+    }
+    .OrderPrice{
+      margin-top: 12px;
+      span{
+        color: var(--clr-black);
+        font-family: "PT Sans Caption", serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  }
+  .InfoSafeBlock{
+    margin: 20px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32px auto;
+    align-items: center;
+    column-gap: 8px;
+    color: var(--clr-purpur);
+    font-family: Inter, "PT Sans Caption", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+    @media (max-width: 632px) {
+      margin: 24px 0;
+    }
+  }
+  .InfoTextDetails{
+    color: var(--clr-light_black);
+    font-family: Inter, "PT Sans Caption", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 10px;
+  }
+  .InfoPhoneBlock{
+    border-radius: 6px;
+    border: 1px solid var(--clr-blue);
+    background: var(--clr-light_blue);
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-light_black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    @media (max-width: 632px) {
+      margin-bottom: 24px;
+    }
+    .IconPhone{
+      margin-right: 10px;
+      width: 32px;
+      height: 32px;
+    }
+    .InfoPhoneText{
+      color: var(--clr-light_black);
+      font-family: Inter, "PT Sans Caption", serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+    }
+    .LinkPhone{
+      font-family: "PT Sans Caption", serif;
+      margin-right: 10px;
+      color: var(--clr-dark_blue);
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      &:hover{
+        color: var(--clr-dark_blue);
+      }
+    }
+    @media (max-width: 408px) {
+      display: grid;
+      .IconPhone{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+      }
+      .LinkPhone{
+        justify-content: center;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .InfoPhoneText{
+        font-size: 15px;
+        grid-column-start: 2;
+        grid-row-start: 1;
+      }
+    }
+  }
+  .WrapperShop{
+    .Title{
+      color: var(--clr-black);
+      font-family: Inter, "PT Sans Caption", serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      margin-bottom: 13px;
+    }
+    .ShopDetails{
+      border: 1px solid var(--clr-border_grey);
+      background: var(--clr-light_blue);
+      padding: 16px;
+      .Row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4px;
+        .Address{
+          color: var(--clr-black);
+          font-family: "PT Sans Caption", serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-right: auto;
+        }
+        .Phone{
+          color: var(--clr-black);
+          font-family: Inter, "PT Sans Caption", serif;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 130%;
+          margin-left: auto;
+          @media (max-width: 632px) {
+            display: none;
+          }
+        }
+      }
+      .Rating{
+        margin-bottom: 5px;
+      }
+      .Wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .Schedule{
+          margin-right: auto;
+          > div:first-child{
+            text-align: right;
+            margin-bottom: 5px;
+            color: var(--clr-black);
+            font-family: "PT Sans Caption", serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+      }
+      .WrapperBottomBlock{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media (max-width: 633px) {
+          align-items: flex-start;
+        }
+        .InfoContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .statusDeliveryToday, .statusDeliveryNoToday {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            white-space: nowrap;
+            margin-right: 10px;
+          }
+
+          .statusDeliveryToday {
+            color: var(--clr-green);
+          }
+
+          .statusDeliveryNoToday {
+            color: var(--clr-grey);
+          }
+
+          .RecordRow {
+            white-space: nowrap;
+            position: relative;
+            color: var(--clr-purpur);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+
+            &:before {
+              content: '';
+              border-radius: 100%;
+              width: 5px;
+              height: 5px;
+              background: var(--clr-purpur);
+              margin-right: 5px;
+            }
+          }
+        }
+        .MakeAppointment{
+          button{
+            line-height: 17px;
+          }
+        }
+        @media (max-width: 632px) {
+          flex-direction: column;
+          .MakeAppointment{
+            margin-top: 8px;
+            width: 100%;
+            a{
+              width: 100%;
+            }
+            button{
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+        }
+        @media (max-width: 335px) {
+          .MakeAppointment{
+            button{
+              padding: 12px 20px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 632px) {
+      .Title{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.MakeAppointment{
+  button{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

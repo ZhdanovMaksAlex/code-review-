@@ -1,0 +1,1 @@
+export { ShortInfoStorageUser } from './ShortInfoStorageUser';

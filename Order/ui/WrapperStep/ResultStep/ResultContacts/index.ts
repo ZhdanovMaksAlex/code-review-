@@ -1,0 +1,1 @@
+export { ResultContacts } from './ResultContacts';

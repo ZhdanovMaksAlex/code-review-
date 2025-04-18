@@ -1,0 +1,1 @@
+export { beautifulPhoneFormat } from './beautifulPhoneFormat';

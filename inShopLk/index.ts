@@ -1,0 +1,1 @@
+export { InShopLK } from './inShopLK';

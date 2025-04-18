@@ -1,0 +1,22 @@
+.Wrapper{
+  .Title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--clr-black);
+  }
+  .Value{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color:var(--clr-light_black);
+  }
+  @media (max-width: 990px) {
+    border: none;
+    padding: 20px 0;
+  }
+  button{
+    margin-top: 10px;
+  }
+}

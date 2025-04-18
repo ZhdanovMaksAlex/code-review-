@@ -1,0 +1,90 @@
+.Wrapper{
+  display: grid;
+  row-gap: 20px;
+  justify-items: start;
+  align-content: space-between;
+  position: relative;
+  .Container{
+    .Title{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      color: var(--clr-black);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      margin-bottom: 16px;
+      svg {
+        margin-left: 12px;
+      }
+    }
+    .NumberOrder{
+      color: var(--clr-green);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px;
+      margin-bottom: 8px;
+    }
+    .OrderDate{
+      color: var(--clr-black);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    .OrderPrice{
+      color: var(--clr-light_black);
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+  .Badge{
+    height: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 4px;
+    background: var(--clr-blue);
+    display: flex;
+    align-items: center;
+    padding: 2px 4px 2px 8px;
+    span {
+      margin-left: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    svg {
+      margin-left: 4px;
+    }
+  }
+  @media (max-width: 990px) {
+    grid-template-columns: 1fr;
+    padding-right: 40px;
+    align-items: start;
+    .Badge{
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      padding: 2px 8px;
+      span {
+        display: none;
+      }
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+
+.WrapperSkeleton{
+  @media (max-width: 990px) {
+    min-height: 132px;
+  }
+}

@@ -1,0 +1,174 @@
+.Wrapper {
+  padding: 20px 16px 16px 16px;
+  background: var(--clr-blue);
+  display: grid;
+  row-gap: 16px;
+  .Title {
+    color: var(--clr-black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .Container {
+    background: var(--clr-white);
+    display: grid;
+    row-gap: 16px;
+    padding: 16px 24px 24px 24px;
+  }
+  .Header {
+    color: var(--clr-green);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--clr-blue);
+    &.isTimeExpired {
+      color: var(--clr-red);
+      display: flex;
+      align-items: center;
+    }
+    .Badge {
+      text-align: center;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px;
+      margin-left: 8px;
+    }
+  }
+  .Block {
+    display: grid;
+    row-gap: 8px;
+    .PartyComposition {
+      background-color: var(--clr-blue);
+      cursor: pointer;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      margin: 10px 0;
+      .IconDown {
+        &.Active {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .Column {
+      display: grid;
+      grid-template-columns: 130px auto;
+      &:last-child {
+        grid-template-columns: 1fr;
+      }
+      > div {
+        color: var(--clr-light_black);
+        font-size: 13px;
+        line-height: 18px;
+      }
+      .Info {
+        color: var(--clr-black);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        display: grid;
+        row-gap: 6px;
+        .Product {
+          display: grid;
+          justify-items: start;
+          row-gap: 4px;
+          .ProductTitle {
+            display: grid;
+            align-items: start;
+            grid-template-columns: 20px auto;
+            column-gap: 4px;
+            svg {
+              margin-top: 0;
+              width: 18px;
+              height: 18px;
+            }
+          }
+          .Depth {
+            text-align: center;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            padding: 2px 6px;
+          }
+        }
+        &.Flex {
+          display: flex;
+          flex-wrap: wrap;
+          span {
+            color: var(--clr-black);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            margin-right: 6px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 600px) {
+      .PartyComposition {
+        margin: 0;
+      }
+      .Column {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 990px) {
+    padding: 0;
+    background: transparent;
+    margin-top: 20px;
+    .Title {
+      display: none;
+    }
+    .Container {
+      padding: 16px;
+      border: 1px solid var(--clr-border_grey);
+      box-shadow: var(--clr-shadow_grey);
+    }
+    .Block {
+      row-gap: 12px;
+    }
+  }
+}
+.EvaluationInformation {
+  color: var(--clr-black);
+  border-top: 2px solid var(--clr-blue);
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 50px 300px 200px;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.InfoNotification {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 30px 0 40px 0;
+  @media (max-width: 990px) {
+    margin: 20px 0;
+  }
+}
+
+.EmptyListStub {
+  @media (max-width: 990px) {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,1 @@
+export { RecKumhoTyres } from './RecKumhoTyres';

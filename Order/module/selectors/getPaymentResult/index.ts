@@ -1,0 +1,1 @@
+export { getPaymentResult } from './getPaymentResult';

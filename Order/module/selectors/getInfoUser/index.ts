@@ -1,0 +1,1 @@
+export { getInfoUser } from './getInfoUser';
