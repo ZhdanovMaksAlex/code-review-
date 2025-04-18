@@ -1,1 +1,0 @@
-export { getPaymentResult } from './getPaymentResult';

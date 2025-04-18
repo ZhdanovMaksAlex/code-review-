@@ -1,1 +1,0 @@
-export { getDeliveryList } from './getDeliveryList';

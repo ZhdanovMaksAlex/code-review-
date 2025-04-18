@@ -1,1 +1,0 @@
-export { CatalogKamaFilter } from './CatalogKamaFilter';

@@ -1,1 +1,0 @@
-export { OneClickOrder } from './OneClickOrder';

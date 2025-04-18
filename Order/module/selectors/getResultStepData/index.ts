@@ -1,1 +1,0 @@
-export { getResultStepData } from './getResultStepData';

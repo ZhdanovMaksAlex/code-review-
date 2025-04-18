@@ -1,1 +1,0 @@
-export { BlockPay } from './BlockPay';

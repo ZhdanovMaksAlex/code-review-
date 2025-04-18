@@ -1,1 +1,0 @@
-export { OrderingButton } from './OrderButton';

@@ -1,1 +1,0 @@
-export { getDeliveryResult } from './getDeliveryResult';

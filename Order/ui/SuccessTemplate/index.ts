@@ -1,1 +1,0 @@
-export { SuccessTemplate } from './SuccessTemplate';

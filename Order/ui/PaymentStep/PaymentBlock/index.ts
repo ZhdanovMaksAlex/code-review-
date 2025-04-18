@@ -1,1 +1,0 @@
-export { PaymentBlock } from './PaymentBlock';

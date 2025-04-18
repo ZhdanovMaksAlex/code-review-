@@ -9,7 +9,7 @@ import { setTyresFilter } from '@app/redux/slices/mainFilter';
 import { setModalTyresCommercial, setModalTyresDiameter, setModalTyresHeight, setModalTyresWidth, setModalFreeTyres } from '@app/redux/slices/modalWindow';
 import { FilterSelect } from '@components/Home/Blocks/MainFilter/Blocks/FilterSelect';
 import { useEffect } from 'react';
-import { CheckoutBox } from './CheckoutBox';
+import { CheckoutBox } from './code-review-/CatalogKamaFilter/CheckoutBox';
 import { generateUrlCompanyFilter } from '@app/shared/helpers';
 import { fetchTyresData } from '@redux/slices/mainFilter/api';
 

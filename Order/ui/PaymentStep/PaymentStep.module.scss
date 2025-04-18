@@ -1,9 +1,0 @@
-.Container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: flex-start;
-  grid-gap: 20px;
-  @media (max-width: 990px) {
-    grid-template-columns: 1fr;
-  }
-}

@@ -1,1 +1,0 @@
-export { DeliveryBlock } from './DeliveryBlock';

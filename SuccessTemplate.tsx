@@ -1,7 +1,7 @@
 import { phoneFormation, phoneFormationBack } from '@helpers/phoneFormation';
 import { Button, ButtonSize, LinkColors, MyLink } from '@app/shared';
 import { Price } from '@sharedComponents/Price';
-import { TypeDataOrder } from '../../module/helpers/dataReductionOrder';
+import { TypeDataOrder } from './code-review-/Order/module/helpers/dataReductionOrder';
 import { useAppSelector } from '@redux/hooks';
 import { selectRegion } from '@redux/slices/header';
 import { useEffect } from 'react';
